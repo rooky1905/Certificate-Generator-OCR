@@ -1,0 +1,34 @@
+body{
+	
+	background-color:#ccffcc;
+}
+table{
+	width:40%;
+	margin-top:70px;
+	font-family:"Times New Roman",Times;
+	font-weight:bold;
+}
+input{
+	width : 100%;
+	padding : 5px;
+}
+select{
+	width : 107%;
+	padding : 5px;
+}
+.gen{
+	width : 10%;
+	padding : 2px;
+}
+td{
+	padding:2%;
+}
+.btn input{
+	width:20%;
+	float:left;
+	background-color:gray;
+	margin-left : 10px;
+}
+.btn{
+	margin-left:160px;
+}

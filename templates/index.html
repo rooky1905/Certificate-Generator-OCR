@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate Generator</title>
+  <script>
+		function certificateG(){
+			var a=document.forms["register"]["certi"].value;
+			var b=document.forms["register"]["sign"].value;
+			var c=document.forms["register"]["xl"].value;
+			var res=true;
+		}	
+		return res;
+		</script>
+  <script>
+		body{	
+			background-color:#ccffcc;
+		}
+		table{
+			width:40%;
+			margin-top:70px;
+			font-family:"Times New Roman",Times;
+			font-weight:bold;
+		}
+		input{
+			width : 100%;
+			padding : 5px;
+		}
+		td{
+			padding:2%;
+		}
+	</script>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+	<body>
+		<form action="http://localhost:5000/uploader" name="CertificateGenerator" method="POST" enctype = "multipart/form-data">
+			<table>
+				<tr>
+					<td>Upload Certificate</td>
+					<td><input type="file" multiple=false accept="image/*" id="certi" name="certi"/></td>
+				</tr>
+				<tr>
+					<td>Upload Excel-sheet</td>
+					<td><input type="file" multiple=false accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" id="xl" name="xl" /></td>
+				</tr>
+			</table>
+			<p><button type="submit" value="submit">Submit</button></p>
+		</form>
+    </body>
+</html>
